@@ -10,6 +10,14 @@ This project provides a **free, local, semantic search Q&A system** using:
 
 ## Quick Start
 
+### 🌐 **Web App (Recommended)**
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+Then open your browser to the provided URL!
+
+### 💻 **Command Line**
 1. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
@@ -17,13 +25,18 @@ This project provides a **free, local, semantic search Q&A system** using:
 
 2. **Build the search index:**
    ```bash
-   python build_embeddings.py
+   python src/build_embeddings.py
    ```
 
 3. **Start using the system:**
    ```bash
-   python answer_questions.py
+   python src/answer_questions.py
    ```
+
+**Or use the launcher script:**
+```bash
+python run.py
+```
 
 ---
 
@@ -45,20 +58,25 @@ pip install -r requirements.txt
 
 ## Features
 
+### 🌐 **Web Interface**
+- **Beautiful Streamlit web app** with clean, modern UI
+- **Real-time Q&A** - Type questions and get instant answers
+- **Adjustable threshold slider** - Fine-tune answer strictness
+- **Smart caching** - Only caches successful answers (no cache bloat)
+- **Responsive design** - Works on desktop and mobile
+
+### 🔍 **Core Functionality**
 - Reads `intvl_faq.json` in format:
   ```json
   [
     {"question": "How is my country calculated?", "answer": "The country that you have done most of your runs in will become your country you represent for Terra!"},
     {"question": "Can I import my Strava runs to Terra?", "answer": "Strava don't allow runs to be sent from their platform to other platforms like INTVL. The Strava integration we have only allows us to send INTVL runs to Strava."}
   ]
-
 - Reads `intvl_background.md` for extra information
-- Answers user queries semantically
-- Caches exact duplicates (cache.json)
-- Logs:
-    - all_questions.log → all queries
-    - unanswered.log → questions needing manual review
-- Fully free and runs locally (no OpenAI API costs)
+- **Semantic search** using SentenceTransformers
+- **Fast vector search** with FAISS
+- **Smart logging** - Tracks all questions and unanswered ones
+- **Fully free** and runs locally (no OpenAI API costs)
 
 ---
 
@@ -89,27 +107,37 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Interactive Mode
+### 🌐 **Web App (Recommended)**
+Launch the beautiful Streamlit web interface:
+```bash
+streamlit run app.py
+```
+- **Ask questions** in the text input
+- **Adjust threshold** with the slider
+- **Get instant answers** with real-time feedback
+
+### 💻 **Command Line**
+#### Interactive Mode
 Run the Q&A system interactively:
 ```bash
-python answer_questions.py
+python src/answer_questions.py
 ```
 
-### Programmatic Usage
+#### Programmatic Usage
 ```python
 from answer_questions import get_answer
 
-# Get answer with default threshold (0.6)
+# Get answer with default threshold (0.7)
 answer = get_answer("How is my country calculated?")
 
 # Customize threshold and number of results
 answer = get_answer("Can I import Strava runs?", threshold=0.5, top_k=3)
 ```
 
-### Testing Thresholds
+#### Testing Thresholds
 Test different similarity thresholds:
 ```bash
-python test_threshold.py
+python src/test_threshold.py
 ```
 
 ---
@@ -120,16 +148,22 @@ python test_threshold.py
 INTVL/
 ├── README.md               # This documentation
 ├── requirements.txt        # Python dependencies
-├── answer_questions.py     # Main Q&A interface
-├── build_embeddings.py     # Build search index from FAQ/background
-├── test_threshold.py       # Test similarity thresholds
-├── intvl_faq.json         # FAQ data (questions & answers)
-├── intvl_background.md     # Additional context information
-├── faq.index              # FAISS vector index (generated)
-├── metadata.json          # Index metadata (generated)
-├── cache.json             # Question cache (generated)
-├── all_questions.log      # All questions log
-└── unanswered.log         # Unanswered questions log
+├── app.py                  # 🌐 Streamlit web application
+├── run.py                  # 💻 Command line launcher script
+├── src/                    # Source code
+│   ├── answer_questions.py # Main Q&A interface
+│   ├── build_embeddings.py # Build search index
+│   └── test_threshold.py   # Test similarity thresholds
+├── data/                   # Input data files
+│   ├── intvl_faq.json     # FAQ data (questions & answers)
+│   └── intvl_background.md # Additional context information
+├── generated/              # Auto-generated files
+│   ├── faq.index          # FAISS vector index
+│   ├── metadata.json      # Index metadata
+│   └── cache.json         # Question cache
+└── logs/                   # Log files
+    ├── all_questions.log   # All questions log
+    └── unanswered.log      # Unanswered questions log
 ```
 
 ---
@@ -147,13 +181,36 @@ INTVL/
 
 ---
 
+## 🚀 **Deployment**
+
+### **Streamlit Cloud (Free)**
+1. Push your code to GitHub
+2. Go to [share.streamlit.io](https://share.streamlit.io)
+3. Connect your GitHub repository
+4. Deploy with one click!
+
+### **Local Development**
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run web app
+streamlit run app.py
+
+# Or run command line version
+python run.py
+```
+
+---
+
 ## Troubleshooting
 
 **Common Issues:**
-- **Index not found**: Run `python build_embeddings.py` first
+- **Index not found**: Run `python src/build_embeddings.py` first
 - **Poor answers**: Lower the similarity threshold
 - **Slow performance**: The first run downloads the model (~90MB)
+- **Web app not loading**: Make sure Streamlit is installed (`pip install streamlit`)
 
 **Logs:**
-- Check `all_questions.log` for all interactions
-- Check `unanswered.log` for questions needing review
+- Check `logs/all_questions.log` for all interactions
+- Check `logs/unanswered.log` for questions needing review

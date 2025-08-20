@@ -6,10 +6,11 @@ from sentence_transformers import SentenceTransformer
 
 # File to help tune threshold
 
-FAQ_PATH = "intvl_faq.json"  # Fixed: match build_embeddings.py
-BG_PATH = "intvl_background.md"  # Fixed: match build_embeddings.py
-INDEX_PATH = "faq.index"
-META_PATH = "metadata.json"
+# Updated paths for new folder structure
+FAQ_PATH = "data/intvl_faq.json"  # Fixed: match build_embeddings.py
+BG_PATH = "data/intvl_background.md"  # Fixed: match build_embeddings.py
+INDEX_PATH = "generated/faq.index"
+META_PATH = "generated/metadata.json"
 
 def test_thresholds():
     """Test different similarity thresholds with sample questions"""
@@ -83,15 +84,7 @@ def test_thresholds():
         "How is my country calculated?",
         "Can I import my Strava runs?",
         "What is Terra?",
-        "How does the platform work?",
-        "I can't add my run from garmin to strava",
-        "How to add run from garmin to strava",
-        "add run garmin strava",
-        "how to add run to strava?",
-        "how to add run from strava?",
-        "What is INTVL?",
-        "Why are my runs not showing up?",
-        "Why are my runs not uploading?"
+        "How does the platform work?"
     ]
     
     thresholds = [0.3, 0.4, 0.5, 0.6, 0.7, 0.8]

@@ -5,11 +5,12 @@ import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-INDEX_PATH = "faq.index"
-META_PATH = "metadata.json"
-CACHE_PATH = "cache.json"
-ALL_LOG = "all_questions.log"
-UNANSWERED_LOG = "unanswered.log"
+# Updated paths for new folder structure
+INDEX_PATH = "generated/faq.index"
+META_PATH = "generated/metadata.json"
+CACHE_PATH = "generated/cache.json"
+ALL_LOG = "logs/all_questions.log"
+UNANSWERED_LOG = "logs/unanswered.log"
 
 # Load embedding model
 model = SentenceTransformer("all-MiniLM-L6-v2")
@@ -94,13 +95,14 @@ def get_answer(user_q, threshold=0.7, top_k=1):
         answer = "I'm not sure about that. We'll forward your question to the team."
         status = "unanswered"
 
-    # Update cache
-    cache[user_q] = answer
-    try:
-        with open(CACHE_PATH, "w") as f:
-            json.dump(cache, f)
-    except Exception as e:
-        print(f"Error updating cache: {e}")
+    # Update cache only for answered questions
+    if status == "answered":
+        cache[user_q] = answer
+        try:
+            with open(CACHE_PATH, "w") as f:
+                json.dump(cache, f)
+        except Exception as e:
+            print(f"Error updating cache: {e}")
 
     # Log
     log_question(user_q, answer, status)

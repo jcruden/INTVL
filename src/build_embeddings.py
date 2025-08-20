@@ -4,10 +4,11 @@ import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-FAQ_PATH = "intvl_faq.json"
-BG_PATH = "intvl_background.md"
-INDEX_PATH = "faq.index"
-META_PATH = "metadata.json"
+# Updated paths for new folder structure
+FAQ_PATH = "data/intvl_faq.json"
+BG_PATH = "data/intvl_background.md"
+INDEX_PATH = "generated/faq.index"
+META_PATH = "generated/metadata.json"
 
 def build_embeddings():
     """Build FAISS index from FAQ and background data"""
@@ -81,6 +82,6 @@ if __name__ == "__main__":
     success = build_embeddings()
     if success:
         print("\nEmbeddings built successfully!")
-        print("You can now run: python answer_questions.py")
+        print("You can now run: python src/answer_questions.py")
     else:
         print("\nFailed to build embeddings. Check the errors above.")

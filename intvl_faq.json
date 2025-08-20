@@ -1,0 +1,154 @@
+[
+  {
+    "question": "My Apple watch runs aren't syncing to INTVL",
+    "answer": "If you have already enabled Apple Health integration with INTVL however your runs aren't syncing with INTVL please try the following: Go to your Apple Watch app on your phone, On your iOS device, open the Apple Watch app and tap the My Watch tab. Go to General > About. Tap the first line, which shows the name of your device. Rename your device to include the word Apple Watch in it and that should fix the issue. If not please email admin@intvl.com.au for more help."
+  },
+  {
+    "question": "I can't add my run from Garmin to Strava",
+    "answer": "If you complete a run with your Garmin device and it has been synced to INTVL, however you can't add it to Strava, you need to set that up through Strava and integrate directly with Garmin Connect."
+  },
+  {
+    "question": "Can I move my runs to a different day",
+    "answer": "Now you can re-order your runs by going to the run section and scrolling to the bottom and clicking Reorder week. Make sure you have installed the latest update of INTVL from the app store if you cant see this feature."
+  },
+  {
+    "question": "How does Terra work? What is Terra?",
+    "answer": "The aim of Terra is to capture as much territory as possible. You do this by going for runs and the area you run in gets captured."
+  },
+  {
+    "question": "How is my country calculated?",
+    "answer": "The country that you have done most of your runs in will become your country you represent for Terra!"
+  },
+  {
+    "question": "How come my run wasn’t added to Terra ?",
+    "answer": "There can be a number of reasons why your run wasn’t added to Terra, the main ones being that the run wasn’t long enough (minimum is 200 metres), or the start and end point of the run was too far apart ( the start and end point needs to be within 200 metres). If you want one of your runs to be checked as to why it wasn’t added please email admin@intvl.com.au to find out more."
+  },
+  {
+    "question": "Will my geofence show on the map for privacy ?",
+    "answer": "If you have decided to add a geofence around an address to help with privacy, then in Terra the geofence won't be included, otherwise if you run around your geofence and keep expanding your territory, there will be a blank circle in the middle and it will make it obvious where your geofence is located. In Terra the start and end points of a run aren’t shown which helps with privacy as well. If you are concerned with what territories get shown, you can make your Terra profile anonymous."
+  },
+  {
+    "question": "My territory was taken but I cant see it on the map ?",
+    "answer": "If you cant see the taken territory on the map it means the user who stole your territory either deleted their account or deleted that run so it isn’t visible anymore."
+  },
+  {
+    "question": "Muscle activation exercises",
+    "answer": "Activation exercises are crucial for runners to engage key muscle groups, enhance performance, and prevent injury by preparing the body for the demands of running. These can be great to do before a run or on a rest day."
+  },
+  {
+    "question": "Can I import my Strava runs to Terra?",
+    "answer": "Strava don't allow runs to be sent from their platform to other platforms like INTVL. The Strava integration we have only allows us to send INTVL runs to Strava."
+  },
+  {
+    "question": "Can I add my previous Garmin runs to Terra?",
+    "answer": "Once you setup the Garmin integration with INTVL, only runs done after that point in time will be able to be synced with INTVL and added to Terra."
+  },
+  {
+    "question": "I ran really far but didn't get much territory?",
+    "answer": "When going for your runs try to run in large box shapes as that will create the largest area, avoid going for out and back runs on the same path as that won't capture much territory even though you might run a long distance. And make sure to start and finish within 200m otherwise the run won't be eligible for Terra"
+  },
+  {
+    "question": "Can I ride my bike or e-scooter?",
+    "answer": "No. If your run looks suspiciously fast or long or both it will get flagged by our anti-cheat system and won't be added to Terra. If you notice someones run that looks suspicious please email admin@intvl.com.au with as much info as you can provide and we will investigate any runs that are suspiciously not a run."
+  },
+  {
+    "question": "Can anyone enter these competitions?",
+    "answer": "If you click view all competitions there will be either a globe icon which means it is open to anyone in the world or the country flags where the competition is eligible to enter."
+  },
+  {
+    "question": "How many entries do I need to win?",
+    "answer": "Even with just 1 entry you have a chance of winning any of the prizes, however the more you run the greater your chance of winning the random draw."
+  },
+  {
+    "question": "I already have one of the main prizes?",
+    "answer": "If you already own one of the prizes on offer for example a running watch you can choose the cash alternative prize instead of taking the prize, please read the Competition T&C's to see the exact cash alternative prize."
+  },
+  {
+    "question": "I went for a run but my entries didn't go up?",
+    "answer": "Firstly make sure your run start time and end time was inside the competition window, another reason could be that you didn't capture enough territory to round up to the next entry as 1 entry = 1km2 of territory captured."
+  },
+  {
+    "question": "My entries went down ?",
+    "answer": "If someone steals your territory from a run that is included in this competition then that also affects your number of entries for that competition because 1 entry = 1km2 of territory captured."
+  },
+  {
+    "question": "How are the winners drawn?",
+    "answer": "Once the competition finishes a snapshot of everyones entries is taken and the winners are electronically randomly selected."
+  },
+  {
+    "question": "I have more questions",
+    "answer": "Head over to the Me section of the app and scroll down and click on FAQs and there you can submit your own question and we will answer it as soon as possible."
+  },
+  {
+    "question": "Can I ride my bike or e-scooter or drive?",
+    "answer": "No. Our anti-cheat system will flag your run and it won't be added to Terra and won't get you any entries into the competition and you may get banned from all competitions."
+  },
+  {
+    "question": "Change Language of app",
+    "answer": "Currently we only support English however in the future we will add more support for other languages."
+  },
+  {
+    "question": "Can I import runs from Strava",
+    "answer": "Strava don’t allow runs to be exported from their platform they only allow runs to be sent to their platform. So you’ll have to record your runs with the INTVL app, a Garmin watch, Apple Watch or Coros watch."
+  },
+  {
+    "question": "Why is my run in manual review",
+    "answer": "If a run is in manual review it means it has been flagged by our anti-cheat system. It doesn’t mean you cheated it just requires a manual review from us. If it gets approved it will be added to the map. We try to process the reviews as frequently as possible but sometimes it can take 24+ hours."
+  },
+  {
+    "question": "I forgot to cancel my subscription how can I get a refund",
+    "answer": "To request a refund search on google “App store refund” and also add either google play or apple App Store and then click on the first link and follow those instructions to submit a refund request as we are unable to process it from our end."
+  },
+  {
+    "question": "Can I walk or is only running allowed",
+    "answer": "walking is allowed"
+  },
+  {
+    "question": "How can I change the colour of my territory",
+    "answer": "To change the colour of your territory, click on your profile picture on the home page of the app and then click edit profile."
+  },
+  {
+    "question": "How to sync Garmin runs?",
+    "answer": "To sync Garmin runs, first setup the integration in settings. Then any run you do after that point in time will be sent across. If you’ve done a run since but it hasn’t come through please submit another question with the date and distance of the run and I can take a look for you"
+  },
+  {
+    "question": "My garmin runs aren't syncing",
+    "answer": "To sync Garmin runs, first setup the integration in settings. Then any run you do after that point in time will be sent across. If you’ve done a run since but it hasn’t come through please submit another question with the date and distance of the run and I can take a look for you"
+  },
+  {
+    "question": "Change language || or the question will be in their native language, common languages we get are portugese, russian and spanish which I either put through google translate to understand what they're saying or I recognise if they're asking to change language",
+    "answer": "Currently we only support English unfortunately."
+  },
+  {
+    "question": "My country flag in the leaderboard is not the country im from (common when they sign up to the app on Holiday and do a run in another country)",
+    "answer": "Once you do the majority of your runs in that country it will automatically switch over"
+  },
+  {
+    "question": "Do you have an integration for [watch]?",
+    "answer": "We don’t support that watch yet, but are planning to add it in our roadmap."
+  },
+  {
+    "question": "Why is my run still in manual review",
+    "answer": "We try to process them as regularly as possible but sometimes it can take 24+ hours"
+  },
+  {
+    "question": "Can I ride my bicycle?",
+    "answer": "we are planning on releasing the cycling version in a few months!"
+  },
+  {
+    "question": "My run isn't on the map or anything related to them not seeing their run (the run is either in manual review, or the start and end points are too far away)",
+    "answer": "if you go to the home page of the app and click on my territories tab at the top of the screen what does it say for the status of that run? Submit via another question"
+  },
+  {
+    "question": "How can I invite someone to my club",
+    "answer": "If your club is invite only, you can find the code by going to clubs mode on the Home Screen and then clicking edit club, and in there will be the invite code. To get someone to join the club, they can click on clubs mode on the home page and then search for the name of the club and click join and enter the code if needed."
+  },
+  {
+    "question": "I ran with my friend, who gets the territory",
+    "answer": "Currently it is whoever starts their run at a later time, however in the future we are going to add a shared territory feature so if you run with one or more people together you all share the territory."
+  },
+  {
+    "question": "What is a geofence?",
+    "answer": "The Geofence removes the start and end points if they fall within the geofenced area for when someone else is viewing the run in the community feed. However for the territory game, we don’t remove the geofence as think of the example where you do multiple runs that start at that geofenced area, if you look at the map then there will be an empty circle of space where the geofence is compared to it just showing a larger area of captured territories and therefore revealing where the user has put a geofence."
+  }
+]

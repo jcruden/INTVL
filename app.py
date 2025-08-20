@@ -22,7 +22,7 @@ def main():
         with col2:
             st.title("INTVL FAQ")
     else:
-        st.title("🏃 INTVL FAQ")
+        st.title("INTVL FAQ")
     
     st.markdown("Ask any question about INTVL!")
     

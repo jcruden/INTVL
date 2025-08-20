@@ -10,14 +10,14 @@ This project provides a **free, local, semantic search Q&A system** using:
 
 ## Quick Start
 
-### 🌐 **Web App (Recommended)**
+### Web App (Recommended)
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 Then open your browser to the provided URL!
 
-### 💻 **Command Line**
+### Command Line
 1. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
@@ -58,14 +58,14 @@ pip install -r requirements.txt
 
 ## Features
 
-### 🌐 **Web Interface**
+### Web Interface
 - **Beautiful Streamlit web app** with clean, modern UI
 - **Real-time Q&A** - Type questions and get instant answers
 - **Adjustable threshold slider** - Fine-tune answer strictness
 - **Smart caching** - Only caches successful answers (no cache bloat)
 - **Responsive design** - Works on desktop and mobile
 
-### 🔍 **Core Functionality**
+### Core Functionality
 - Reads `intvl_faq.json` in format:
   ```json
   [
@@ -107,7 +107,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-### 🌐 **Web App (Recommended)**
+### Web App (Recommended)
 Launch the beautiful Streamlit web interface:
 ```bash
 streamlit run app.py
@@ -116,7 +116,7 @@ streamlit run app.py
 - **Adjust threshold** with the slider
 - **Get instant answers** with real-time feedback
 
-### 💻 **Command Line**
+### Command Line
 #### Interactive Mode
 Run the Q&A system interactively:
 ```bash
@@ -148,8 +148,8 @@ python src/test_threshold.py
 INTVL/
 ├── README.md               # This documentation
 ├── requirements.txt        # Python dependencies
-├── app.py                  # 🌐 Streamlit web application
-├── run.py                  # 💻 Command line launcher script
+├── app.py                  # Streamlit web application
+├── run.py                  # Command line launcher script
 ├── src/                    # Source code
 │   ├── answer_questions.py # Main Q&A interface
 │   ├── build_embeddings.py # Build search index
@@ -181,7 +181,7 @@ INTVL/
 
 ---
 
-## 🚀 **Deployment**
+## Deployment
 
 ### **Streamlit Cloud (Free)**
 1. Push your code to GitHub

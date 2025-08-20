@@ -46,7 +46,7 @@ def main():
                 print("Invalid choice. Please enter 1-4.")
                 
         except KeyboardInterrupt:
-            print("\n\n👋 Goodbye!")
+            print("\n\nQuitting...")
             break
         except Exception as e:
             print(f"Error: {e}")

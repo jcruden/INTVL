@@ -89,7 +89,11 @@
   },
   {
     "question": "Can I import runs from Strava",
-    "answer": "Strava don’t allow runs to be exported from their platform they only allow runs to be sent to their platform. So you’ll have to record your runs with the INTVL app, a Garmin watch, Apple Watch or Coros watch."
+    "answer": "Strava doesn't allow runs to be exported from their platform; they only allow runs to be sent to their platform. So you’ll have to record your runs with the INTVL app, a Garmin watch, Apple Watch or Coros watch."
+  },
+  {
+    "question": "Can I add runs to Strava?",
+    "answer": "Strava doesn't allow runs to be exported from their platform; they only allow runs to be sent to their platform. So you’ll have to record your runs with the INTVL app, a Garmin watch, Apple Watch or Coros watch."
   },
   {
     "question": "Why is my run in manual review",

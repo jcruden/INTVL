@@ -56,7 +56,7 @@ def log_question(question, answer, status):
             print(f"Error logging unanswered question: {e}")
 
 # Main answer function
-def get_answer(user_q, threshold=0.6, top_k=1):
+def get_answer(user_q, threshold=0.7, top_k=1):
     user_q = user_q.strip()
     if not user_q:
         return "Please ask a non-empty question."

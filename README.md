@@ -8,12 +8,31 @@ This project provides a **free, local, semantic search Q&A system** using:
 
 ---
 
+## Quick Start
+
+1. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Build the search index:**
+   ```bash
+   python build_embeddings.py
+   ```
+
+3. **Start using the system:**
+   ```bash
+   python answer_questions.py
+   ```
+
+---
+
 ## Dependencies
 
 Install the required packages:
 
 ```bash
-pip install sentence-transformers faiss-cpu numpy
+pip install -r requirements.txt
 ```
 
 **Required packages:**
@@ -26,14 +45,14 @@ pip install sentence-transformers faiss-cpu numpy
 
 ## Features
 
-- Reads `faq.json` in format:
+- Reads `intvl_faq.json` in format:
   ```json
   [
     {"question": "How is my country calculated?", "answer": "The country that you have done most of your runs in will become your country you represent for Terra!"},
     {"question": "Can I import my Strava runs to Terra?", "answer": "Strava don't allow runs to be sent from their platform to other platforms like INTVL. The Strava integration we have only allows us to send INTVL runs to Strava."}
   ]
 
-- Reads background.md for extra information
+- Reads `intvl_background.md` for extra information
 - Answers user queries semantically
 - Caches exact duplicates (cache.json)
 - Logs:
@@ -53,13 +72,13 @@ pip install sentence-transformers faiss-cpu numpy
 
 2. **Install dependencies:**
    ```bash
-   pip install sentence-transformers faiss-cpu numpy
+   pip install -r requirements.txt
    ```
 
 3. **Prepare your data files:**
-   - Create `intvl_faq.json` with your FAQ data
-   - Create `intvl_background.md` with additional context
-   - Or use the existing example files
+   - Use the existing `intvl_faq.json` with your FAQ data
+   - Use the existing `intvl_background.md` with additional context
+   - Or modify these files with your own content
 
 4. **Build the search index:**
    ```bash
@@ -99,16 +118,18 @@ python test_threshold.py
 
 ```
 INTVL/
-├── answer_questions.py      # Main Q&A interface
-├── build_embeddings.py      # Build search index from FAQ/background
-├── test_threshold.py        # Test similarity thresholds
-├── intvl_faq.json          # FAQ data (questions & answers)
-├── intvl_background.md      # Additional context information
-├── faq.index               # FAISS vector index (generated)
-├── metadata.json           # Index metadata (generated)
-├── cache.json              # Question cache (generated)
-├── all_questions.log       # All questions log
-└── unanswered.log          # Unanswered questions log
+├── README.md               # This documentation
+├── requirements.txt        # Python dependencies
+├── answer_questions.py     # Main Q&A interface
+├── build_embeddings.py     # Build search index from FAQ/background
+├── test_threshold.py       # Test similarity thresholds
+├── intvl_faq.json         # FAQ data (questions & answers)
+├── intvl_background.md     # Additional context information
+├── faq.index              # FAISS vector index (generated)
+├── metadata.json          # Index metadata (generated)
+├── cache.json             # Question cache (generated)
+├── all_questions.log      # All questions log
+└── unanswered.log         # Unanswered questions log
 ```
 
 ---

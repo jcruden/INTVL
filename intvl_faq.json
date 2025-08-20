@@ -150,5 +150,125 @@
   {
     "question": "What is a geofence?",
     "answer": "The Geofence removes the start and end points if they fall within the geofenced area for when someone else is viewing the run in the community feed. However for the territory game, we don’t remove the geofence as think of the example where you do multiple runs that start at that geofenced area, if you look at the map then there will be an empty circle of space where the geofence is compared to it just showing a larger area of captured territories and therefore revealing where the user has put a geofence."
+  },
+  {
+    "question": "What is INTVL?",
+    "answer": "INTVL is a running app that transforms running into a live global game through territory capture mechanics. The tagline is 'RUN. CAPTURE. CONQUER' - it's the ultimate running game of territory where you claim real-world territory by running specific routes."
+  },
+  {
+    "question": "Who founded INTVL and when?",
+    "answer": "INTVL was founded in early 2024 by Louis Phillips and Jordan Hesse. The company is INTVL PTY LTD, based in Australia."
+  },
+  {
+    "question": "How do I contact INTVL support?",
+    "answer": "You can contact INTVL support at admin@intvl.com.au or visit their website at https://www.intvl.com.au/. You can also submit questions through the in-app question submission system."
+  },
+  {
+    "question": "Where can I download the INTVL app?",
+    "answer": "INTVL is available on both the iOS App Store and Google Play Store. You can also follow them on social media @intvl.app on Instagram and TikTok."
+  },
+  {
+    "question": "How does Terra Mode work?",
+    "answer": "Terra Mode is the primary game feature where you claim real-world territory by running specific routes. You can also 'steal' territory from other runners by running through their captured areas. Your captured territory appears on a global map with customizable colors."
+  },
+  {
+    "question": "What are the minimum requirements for a run in Terra Mode?",
+    "answer": "Runs must be at least 200 meters long, and the start and end points must be within 200 meters of each other. Box-shaped routes capture more territory than out-and-back runs on the same path."
+  },
+  {
+    "question": "Can I steal other people's territory?",
+    "answer": "Yes! You can capture territory from other runners by running through their captured areas. This creates an ongoing competitive element as territories can change hands."
+  },
+  {
+    "question": "What is Club Mode?",
+    "answer": "Club Mode allows team competition where users join clubs to capture territory collectively. There are both private clubs with invite codes and public clubs available. Club members work together to capture the most territory."
+  },
+  {
+    "question": "Which devices and apps does INTVL integrate with?",
+    "answer": "INTVL integrates with Apple Watch (full integration with automatic run syncing), Garmin (direct integration with Garmin Connect), Coros watches, Strava (one-way integration from INTVL to Strava only), and Apple Health for full health data integration."
+  },
+  {
+    "question": "Does INTVL offer training features?",
+    "answer": "Yes! INTVL offers personalized running plans, muscle activation exercises for pre-run and rest days, run reordering capabilities, and comprehensive run analytics and progress tracking."
+  },
+  {
+    "question": "How do competitions work?",
+    "answer": "INTVL runs regular competitions with running watch prizes and cash alternatives. You get 1 entry for every 1 km² of territory captured. Competitions can be worldwide or country-specific, with winners selected through electronic random draw after competition periods."
+  },
+  {
+    "question": "How many users does INTVL have?",
+    "answer": "INTVL has over 45,000+ registered users based on leaderboard entries, with significant growth since launching in early 2024."
+  },
+  {
+    "question": "How does INTVL prevent cheating?",
+    "answer": "INTVL has an automated anti-cheat system that flags suspicious runs (too fast, too long, or both). Flagged runs go through manual human review which can take 24+ hours. Only running and walking are allowed - cycling, e-scooters, and driving are prohibited. Cheating can result in competition bans."
+  },
+  {
+    "question": "What privacy features does INTVL have?",
+    "answer": "INTVL offers geofencing to create privacy zones around addresses, anonymous profile options, start/end point privacy in Terra mode, and community feed privacy where geofenced areas are removed from public viewing."
+  },
+  {
+    "question": "How is my country determined in INTVL?",
+    "answer": "Your country representation is determined by where you've done the majority of your runs."
+  },
+  {
+    "question": "Can I customize my territory appearance?",
+    "answer": "Yes, you can change the colors of your captured territory on the map to personalize your appearance."
+  },
+  {
+    "question": "Is INTVL free to use?",
+    "answer": "INTVL uses a freemium model where basic features are available for free, but advanced training plans and premium features require a subscription."
+  },
+  {
+    "question": "How do I get a refund for my INTVL subscription?",
+    "answer": "INTVL directs users to the App Store or Google Play refund processes, as the company cannot process refunds directly. You'll need to request a refund through the platform where you purchased your subscription."
+  },
+  {
+    "question": "What activities are allowed in INTVL?",
+    "answer": "Only running and walking activities are allowed in INTVL. Cycling, e-scooters, and driving are prohibited and will be flagged by the anti-cheat system."
+  },
+  {
+    "question": "How long does manual review take for flagged runs?",
+    "answer": "Manual review for flagged runs can take 24+ hours as they go through human review to ensure legitimacy."
+  },
+  {
+    "question": "Can I see other people's start and end points?",
+    "answer": "No, start and end points are not shown in Terra mode for privacy protection."
+  },
+  {
+    "question": "What future features are planned for INTVL?",
+    "answer": "INTVL is planning a cycling version for bicycle-based territory capture, shared territory for group runs, multi-language support beyond English, and additional watch integrations."
+  },
+  {
+    "question": "How does territory calculation work?",
+    "answer": "INTVL uses sophisticated algorithms for precise area calculation and overlap detection based on GPS tracking data. Box-shaped routes capture more territory than out-and-back runs on the same path."
+  },
+  {
+    "question": "Can I do group runs and share territory?",
+    "answer": "Shared territory for group runs is a planned feature currently in development, but not yet available."
+  },
+  {
+    "question": "Is INTVL available in multiple languages?",
+    "answer": "Currently INTVL is English-only, but multi-language support is planned for future releases."
+  },
+  {
+    "question": "How often are competitions held?",
+    "answer": "INTVL holds regular competitions with prizes, but specific frequency details would need to be confirmed through the app or support team."
+  },
+  {
+    "question": "Can I join multiple clubs?",
+    "answer": "The background information doesn't specify if users can join multiple clubs - you'd need to check this in the app or contact support for clarification."
+  },
+  {
+    "question": "What makes INTVL different from other running apps?",
+    "answer": "INTVL's unique territory-based gaming approach, real-world integration where physical movement translates to virtual territory, live global competition, strategic gameplay where route planning affects territorial gain, and regular prize competitions set it apart from traditional running apps."
+  },
+  {
+    "question": "How does Strava integration work?",
+    "answer": "INTVL has one-way integration with Strava, meaning data flows from INTVL to Strava only, not the other way around."
+  },
+  {
+    "question": "What data does INTVL collect?",
+    "answer": "INTVL collects GPS tracking data for territory calculation, health integration data from multiple sources, run validation data, and territory calculation algorithms for area calculation and overlap detection."
   }
 ]

@@ -39,8 +39,8 @@ def main():
     if question:
         with st.spinner("Finding answer..."):
             try:
-                from answer_questions import main as qa_main
-                answer = qa_main(question, threshold=threshold)
+                from answer_questions import get_answer
+                answer = get_answer(question, threshold=threshold)
                 
                 # Display answer with styling
                 if "I'm not sure" in answer:

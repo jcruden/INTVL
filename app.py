@@ -40,7 +40,7 @@ def main():
         with st.spinner("Finding answer..."):
             try:
                 from answer_questions import main as qa_main
-                answer = main(question, threshold=threshold)
+                answer = qa_main(question, threshold=threshold)
                 
                 # Display answer with styling
                 if "I'm not sure" in answer:

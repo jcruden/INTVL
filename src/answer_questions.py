@@ -109,10 +109,14 @@ def get_answer(user_q, threshold=0.7, top_k=1):
     return answer
 
 # Interactive loop
-if __name__ == "__main__":
+def main():
+    """Main function that can be imported and called from other scripts"""
     print("Ready. Type 'quit' to exit.")
     while True:
         q = input("Ask a question: ")
         if q.lower() == "quit":
             break
         print("Answer:", get_answer(q))
+
+if __name__ == "__main__":
+    main()
